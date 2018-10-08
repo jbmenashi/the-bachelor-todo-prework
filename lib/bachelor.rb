@@ -47,4 +47,6 @@ def get_average_age_for_season(data, season)
   data.each do |bach_season, contestants|
     if bach_season == season
       return season.length
+    end
+  end
 end
