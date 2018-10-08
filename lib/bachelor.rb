@@ -1,7 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   data.each do |season, contestants|
    contestants.each do |contestant|
-     puts contestant["status"]
+     contestant["status"]
    end
  end
 end
