@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
     if bach_season == season
       contestants.each do |contestant|
         if contestant["status"] == "Winner"
-          return contestant["name"]
+          contestant["name"].split(" ")
         end
       end
     end
