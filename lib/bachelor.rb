@@ -48,8 +48,9 @@ def get_average_age_for_season(data, season)
     if bach_season == season
       total_age = 0 
       contestants.each do |contestant|
-        
-      return contestants.length
+        total_age += contestant["age"].to_i
+      end
+      return total_age
     end
   end
 end
